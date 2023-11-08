@@ -1,0 +1,69 @@
+.home_box {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/image/self-bg.jpg') no-repeat;
+    background-size:100% 100%;
+    background-attachment:fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navigation {
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        border-radius: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         box-sizing: border-box;
+         padding: 20px 40px;
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            img {
+                height: 90px;
+                width: 90px;
+                border-radius: 50%;
+            }
+        }
+        .avatar:hover {
+            cursor: pointer;
+        }
+        .name  {
+            font-size: 18px;
+        }
+        .name:hover {
+            cursor: pointer;
+        }
+        .action {
+            font-size: 14px;
+            span {
+                margin:0px 15px;
+            }
+        }
+        .listing {
+            padding: 20px 0px; 
+            border-top: 1px solid #acacac;
+            border-bottom: 1px solid #acacac ;
+            .items {
+                display: flex;
+                width: 100%;
+                color: #acacac;
+                li {
+                    padding: 10px 45px ;
+                    border-right: 1px solid #acacac;
+                }
+                li:first-child {
+                    border-left: 1px solid #acacac;
+                }
+                li:hover {
+                    cursor: pointer;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
